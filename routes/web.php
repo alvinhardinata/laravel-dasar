@@ -18,3 +18,15 @@ return 'Nama Saya Adalah : ' .$nama;
 Route::get('/hitung-luas-segitiga/{alas}/tinggi/{tinggi}' , function ($alas, $tinggi) {
     return 'hasil luas segitiganya : ' .($alas * $tinggi) * 0.5;
 });
+
+Route::group(['prefix'=>'jurusan'], function(){
+    Route::get('/', function (){
+        return 'berhasil';
+    });
+    Route::get('/kelas/{namakelas}', function ($namakelas){
+        return $namakelas;
+    });
+    Route::get('/wali-kelas/{nama}', function ($nama){
+        return $nama;
+    });
+});

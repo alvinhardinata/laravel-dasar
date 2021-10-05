@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\DataSiswaController;
 use Illuminate\Support\Facades\Route;
 
 //Parameter Wajib
@@ -30,3 +32,14 @@ Route::group(['prefix'=>'jurusan'], function(){
         return $nama;
     });
 });
+
+Route::get('data-siswa', [DataSiswaController::class , 'dataSiswa']);
+Route::get('data-siswi', [DataSiswaController::class , 'dataSiswi']);
+Route::get('nama/{nama?}', [DataSiswaController::class , 'nama']);
+
+Route::resource('user', UserController::class);
+
+Route::get('profile', function(){
+    return view('profile.index');
+});
+

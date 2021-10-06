@@ -43,7 +43,15 @@ Route::get('profile', function(){
     return view('profile.index');
 });
 
+Route::get('/', function(){
+    return view('index');
+});
 
-Route::get('fasasfsgsdagsdgsdhdfhsfdnjnasfaskf', function(){
+
+Route::get('vinzvinzvinzvinzvinzvinzvinzvinzvinzvinzvinzvinzvinzvinz', function(){
     return view('album');
 })->name('album');
+
+Route::get('index1', function(){
+    return view('index1');
+})->name('index1');

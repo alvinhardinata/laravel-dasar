@@ -5,6 +5,10 @@ use App\Http\Controllers\DataSiswaController;
 use Illuminate\Support\Facades\Route;
 
 //Parameter Wajib
+Route::get('beranda', function () {
+    return view('');
+});
+
 Route::get('/nama-framework/{nama}', function ($nama) {
     return 'Nama Framework yang dimasukan adalah: ' .$nama;
 });

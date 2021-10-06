@@ -44,6 +44,6 @@ Route::get('profile', function(){
 });
 
 
-Route::get('album', function(){
+Route::get('fasasfsgsdagsdgsdhdfhsfdnjnasfaskf', function(){
     return view('album');
-});
+})->name('album');

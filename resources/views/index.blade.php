@@ -5,5 +5,5 @@ Halaman Album
 @endsection
 
 @section('content')
-ini isi dari halaman album
+<a class="btn btn-primary btn-lg" href="{{ route('album')}}">album</a>
 @endsection
